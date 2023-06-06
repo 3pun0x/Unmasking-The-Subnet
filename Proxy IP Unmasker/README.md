@@ -3,12 +3,13 @@
 Proxy IP Unmasker is a Python script that performs port scanning on a range of IP addresses. The goal is to identify IP addresses that are only accessible through a specific proxy. This can be particularly useful for unmasking the hidden services or systems which are not directly reachable.
 
 ```bash
-   __  __                           __   _                ________            _____       __               __ 
-  / / / /___  ____ ___  ____ ______/ /__(_)___  ____ _   /_  __/ /_  ___     / ___/__  __/ /_  ____  ___  / /_
- / / / / __ \/ __ `__ \/ __ `/ ___/ //_/ / __ \/ __ `/    / / / __ \/ _ \    \__ \/ / / / __ \/ __ \/ _ \/ __/
-/ /_/ / / / / / / / / / /_/ (__  ) ,< / / / / / /_/ /    / / / / / /  __/   ___/ / /_/ / /_/ / / / /  __/ /_  
-\____/_/ /_/_/ /_/ /_/\__,_/____/_/|_/_/_/ /_/\__, /    /_/ /_/ /_/\___/   /____/\__,_/_.___/_/ /_/\___/\__/  
-                                             /____/                                                                                            
+    ________     __  __                           __            
+   /  _/ __ \   / / / /___  ____ ___  ____ ______/ /_____  _____
+   / // /_/ /  / / / / __ \/ __ `__ \/ __ `/ ___/ //_/ _ \/ ___/
+ _/ // ____/  / /_/ / / / / / / / / / /_/ (__  ) ,< /  __/ /    
+/___/_/       \____/_/ /_/_/ /_/ /_/\__,_/____/_/|_|\___/_/     
+
+https://github.com/3pun0x/Unmasking-The-Subnet                                                                
 ```
 
 # Getting Started
