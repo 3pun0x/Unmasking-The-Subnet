@@ -35,7 +35,7 @@ proxy_port = 'your_proxy_port'
 ## Usage
 Run the script using Python:
 ```bash
-python proxy_ip_unmasker.py
+python ip_unmasker.py
 ```
 When prompted, enter the IP range and port that you want to scan:
 ```bash
