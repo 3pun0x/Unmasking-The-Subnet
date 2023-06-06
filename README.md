@@ -1,6 +1,15 @@
 # Unmasking the Subnet: Lookalike IP Ranges in Cloud Environments
 This repository contains all materials associated with the talk "Unmasking the Subnet: Lookalike IP Ranges in Cloud Environments" presented by Asaf Aprozper at [fwd:cloudsec 2023](https://pretalx.com/fwd-cloudsec-2023/talk/XDU89P/).
 
+```bash
+   __  __                           __   _                ________            _____       __               __ 
+  / / / /___  ____ ___  ____ ______/ /__(_)___  ____ _   /_  __/ /_  ___     / ___/__  __/ /_  ____  ___  / /_
+ / / / / __ \/ __ `__ \/ __ `/ ___/ //_/ / __ \/ __ `/    / / / __ \/ _ \    \__ \/ / / / __ \/ __ \/ _ \/ __/
+/ /_/ / / / / / / / / / /_/ (__  ) ,< / / / / / /_/ /    / / / / / /  __/   ___/ / /_/ / /_/ / / / /  __/ /_  
+\____/_/ /_/_/ /_/ /_/\__,_/____/_/|_/_/_/ /_/\__, /    /_/ /_/ /_/\___/   /____/\__,_/_.___/_/ /_/\___/\__/  
+                                             /____/                                                                                            
+```
+
 ## About the Talk
 In the evolving landscape of cloud computing, safeguarding networks from unauthorized access remains crucial. This talk explores a less-discussed risk factor – the use of lookalike private IP ranges. The discussion unfolds our investigation that revealed cloud users' erroneous configuration of Security Groups and VPCs with IP ranges, which they presumed to be internal but were, in fact, publicly exposed to US cellular networks and potentially to malicious actors. The talk not only highlights the security risks associated with lookalike IP addresses in cloud environments but also offers practical hunting rules to mitigate such misconfigurations.
 
