@@ -26,7 +26,7 @@ Please use this repository responsibly, as it is intended for educational purpos
 
 ## About the Author
 
-**Asaf Aprozper (3pun0x)** is the creator of this repository and the presenter of the talk. You can reach out to him on [Twitter](https://twitter.com/3pun0x) or connect with him on [LinkedIn](https://www.linkedin.com/in/asafaprozper). 
+**Asaf Aprozper (3pun0x)** - *Creator* - [Twitter](https://twitter.com/3pun0x) - [LinkedIn](https://www.linkedin.com/in/asafaprozper) 
 
 ## Contributing
 
