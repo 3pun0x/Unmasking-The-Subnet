@@ -14,9 +14,9 @@ This repository contains all materials associated with the talk "Unmasking the S
 In the evolving landscape of cloud computing, safeguarding networks from unauthorized access remains crucial. This talk explores a less-discussed risk factor – the use of lookalike private IP ranges. The discussion unfolds our investigation that revealed cloud users' erroneous configuration of Security Groups and VPCs with IP ranges, which they presumed to be internal but were, in fact, publicly exposed to US cellular networks and potentially to malicious actors. The talk not only highlights the security risks associated with lookalike IP addresses in cloud environments but also offers practical hunting rules to mitigate such misconfigurations.
 
 ## Repository Contents
+- [Proxy IP Unmasker/](https://github.com/3pun0x/Unmasking-The-Subnet/tree/main/Proxy-IP-Unmasker): Python script that scans IP ranges and "unmasks" those only accessible from proxy IP addresses.
+- [rules/](https://github.com/3pun0x/Unmasking-The-Subnet/tree/main/rules): Splunk Hunting rules triggered by the creation/modification of security groups containing lookalike IP ranges.
 - `presentation/`: The slide deck from the talk.
-- `Proxy IP Unmasker/`: Python script that scans IP ranges and "unmasks" those only accessible from proxy IP addresses.
-- `rules/`: Splunk Hunting rules triggered by the creation/modification of security groups containing lookalike IP ranges.
 
 Please use this repository responsibly, as it is intended for educational purposes only.
 
