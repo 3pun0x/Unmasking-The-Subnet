@@ -1,7 +1,12 @@
-index="aws"  (eventName="AuthorizeSecurityGroupIngress" OR eventName="ModifySecurityGroupRules") AND errorCode=success
+preview: false
+result:
+  author: 3pun0x@gmail.com
+  search: "index="aws"  (eventName="AuthorizeSecurityGroupIngress" OR eventName="ModifySecurityGroupRules") AND errorCode=success
 | rename requestParameters.ipPermissions.items{}.ipRanges.items{}.cidrIp as cidrIpAuthoriz
 | rename requestParameters.ModifySecurityGroupRulesRequest.SecurityGroupRule.SecurityGroupRule.CidrIpv4 as cidrIpModify
 | eval cidrIp = coalesce(cidrIpAuthoriz,cidrIpModify) ```Combine different event types and grabbed the cidrIp```
 | mvexpand cidrIp ```Handling multi-value CIDRs```
 | eval single_ip = mvindex(split(cidrIp, "/"), 0) ```Split CIDR to single IP```
-| where cidrmatch("172.0.0.0/12", single_ip) OR cidrmatch("172.32.0.0/11", single_ip) OR cidrmatch("172.64.0.0/10", single_ip) OR cidrmatch("172.128.0.0/9", single_ip) OR cidrmatch("192.0.0.0/9", single_ip) OR cidrmatch("192.128.0.0/11", single_ip) OR cidrmatch("192.160.0.0/13", single_ip) OR cidrmatch("192.169.0.0/16", single_ip) OR cidrmatch("192.170.0.0/15", single_ip) OR cidrmatch("192.172.0.0/14", single_ip) OR cidrmatch("192.176.0.0/12", single_ip) OR cidrmatch("192.192.0.0/10", single_ip) ```Search for single IP range in any of the lookalike CIDR patterns```
+| where cidrmatch("172.0.0.0/12", single_ip) OR cidrmatch("172.32.0.0/11", single_ip) OR cidrmatch("172.64.0.0/10", single_ip) OR cidrmatch("172.128.0.0/9", single_ip) OR cidrmatch("192.0.0.0/9", single_ip) OR cidrmatch("192.128.0.0/11", single_ip) OR cidrmatch("192.160.0.0/13", single_ip) OR cidrmatch("192.169.0.0/16", single_ip) OR cidrmatch("192.170.0.0/15", single_ip) OR cidrmatch("192.172.0.0/14", single_ip) OR cidrmatch("192.176.0.0/12", single_ip) OR cidrmatch("192.192.0.0/10", single_ip) ```Search for single IP range in any of the lookalike CIDR patterns```"
+  title: Creation of Security Group with Lookalike Private IP Addres
+  updated: '2023-04-10T14:19:51+03:00'
