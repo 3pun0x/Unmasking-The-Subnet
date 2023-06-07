@@ -10,7 +10,7 @@ The goal is to identify IP addresses that are only accessible through a specific
  _/ // ____/  / /_/ / / / / / / / / / /_/ (__  ) ,< /  __/ /    
 /___/_/       \____/_/ /_/_/ /_/ /_/\__,_/____/_/|_|\___/_/     
 
-https://github.com/3pun0x/Unmasking-The-Subnet                                                                
+https://github.com/3pun0x/Unmasking-The-Subnet
 ```
 
 
