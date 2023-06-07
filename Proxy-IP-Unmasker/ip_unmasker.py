@@ -14,7 +14,7 @@ ascii_art = ("""
  _/ // ____/  / /_/ / / / / / / / / / /_/ (__  ) ,< /  __/ /    
 /___/_/       \____/_/ /_/_/ /_/ /_/\__,_/____/_/|_|\___/_/     
 
-https://github.com/3pun0x/Unmasking-The-Subnet                                                                                          
+https://github.com/3pun0x/Unmasking-The-Subnet
 """)
 
 
