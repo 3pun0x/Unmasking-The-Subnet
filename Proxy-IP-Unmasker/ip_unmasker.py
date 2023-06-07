@@ -76,7 +76,7 @@ def ip_unmasker():
     # Calculate and print total time taken
     end_time = time.time()
     total_time = end_time - start_time
-    print(f"\nTotal time taken: {total_time} seconds")
+    print(f"\nTotal time taken: {round(total_time)} seconds")
 
 
 if __name__ == '__main__':
