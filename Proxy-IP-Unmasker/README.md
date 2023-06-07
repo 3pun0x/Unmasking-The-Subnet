@@ -13,13 +13,16 @@ The goal is to identify IP addresses that are only accessible through a specific
 https://github.com/3pun0x/Unmasking-The-Subnet                                                                
 ```
 
-# Getting Started
-These instructions will guide you on how to execute the Proxy IP Unmasker script.
-
 
 ## Prerequisites
 This script is written in Python and uses several libraries that need to be installed. These libraries include socks, multiprocessing, tqdm, and netaddr. You can install these using requirements.txt:
+1. Python 3.6 or above
+2. SOCKS5 Proxy server with username and password
+
+
+## Getting Started
 ```bash
+git clone <repo>
 pip install -r requirements.txt
 ```
 
@@ -47,11 +50,18 @@ Enter the port: 80
 
 
 ## Results
-The script will print out any IP addresses that are accessible via the proxy but not directly. It will also display a progress bar indicating the progress of the scan and will print the total time taken for the scan once it's completed.
+The script will print out any IP addresses that are accessible via the proxy but not via the public internet. It will also display a progress bar indicating the progress of the scan and will print the total time taken for the scan once it's completed.
+
+![](DOCS/scanner_gif.gif)
 
 ## References
 - [Unmasking the Subnet: Lookalike IP Ranges in Cloud Environments (fwd:cloudsec 2023)](https://pretalx.com/fwd-cloudsec-2023/talk/XDU89P/)
 
+## Contributing
+Pull requests and forks are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Authors
 **Asaf Aprozper (3pun0x)** - *Creator* - [Twitter](https://twitter.com/3pun0x) - [LinkedIn](https://www.linkedin.com/in/asafaprozper) 
+
+## License
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
