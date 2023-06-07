@@ -52,7 +52,6 @@ Enter the port: 80
 ## Results
 The script will print out any IP addresses that are accessible via the proxy but not via the public internet. It will also display a progress bar indicating the progress of the scan and will print the total time taken for the scan once it's completed.
 
-![](scanner.jpeg)
 
 ## References
 - [Unmasking the Subnet: Lookalike IP Ranges in Cloud Environments (fwd:cloudsec 2023)](https://pretalx.com/fwd-cloudsec-2023/talk/XDU89P/)
