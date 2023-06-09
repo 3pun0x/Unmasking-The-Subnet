@@ -1,0 +1,9 @@
+result:
+  author: 3pun0x@gmail.com
+  title: Detects the creation or modification of a GCP FW rule with a Lookalike Private IP Address
+  updated: '2023-05-10T16:19:51+03:00'
+  search: 
+index="google" data.resource.type="gce_firewall_rule" AND (data.protoPayload.methodName="*.firewalls.insert" OR data.protoPayload.methodName="*.firewalls.update") AND "data.protoPayload.request.alloweds{}.IPProtocol"="*"
+    | mvexpand src_ip_range
+    | eval single_ip = mvindex(split(src_ip_range, "/"), 0) ```Split CIDR into single IP```
+    | where cidrmatch("172.1.0.0/22", single_ip) OR cidrmatch("172.32.0.0/11", single_ip) OR cidrmatch("172.0.0.0/8", single_ip) ```Search for single IP in AT&T and T-Mobile lookalike private IP ranges```
