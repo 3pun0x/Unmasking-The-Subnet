@@ -1,4 +1,3 @@
-preview: false
 result:
   author: 3pun0x@gmail.com
   title: Detects the creation or modification of an AWS Security Group with a Lookalike Private IP Address
