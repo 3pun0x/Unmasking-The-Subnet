@@ -1,0 +1,25 @@
+title: Creation or Modification of AWS Security Group With Lookalike Private IP Address
+id: 3cc79b48-3c97-439b-bba0-f056bb8bac4f
+status: experimental
+description: Detects the creation or modification of a security group containing lookalike private IP addresses, which exposing the infrastracure for IP cellular ranges
+author: Asaf Aprozper
+date: 2023/05/11
+tags:
+    - attack.initial_access
+    - attack.t1190
+logsource:
+    product: aws
+    service: cloudtrail
+detection:
+    selection_source:
+        eventSource: ec2.amazonaws.com
+        eventName: 
+            - AuthorizeSecurityGroupIngress
+            - ModifySecurityGroupRules
+    lookalike_private_ips:
+        - '172.0.0.0/8'
+        - '172.32.0.0/11'
+    condition: selection_source and lookalike_private_ips
+falsepositives:
+    - Security group creation or modification made by a trusted or known entity in the system.
+level: high
