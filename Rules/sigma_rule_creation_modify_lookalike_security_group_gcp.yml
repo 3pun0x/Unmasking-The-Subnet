@@ -1,0 +1,26 @@
+title: Creation or Modification of GCP Firewall Rule With Lookalike Private IP Address
+id: unique-rule-id
+status: experimental
+description: Detects the creation or modification of a firewall rule in GCP containing lookalike private IP addresses,  which exposing the infrastracure for IP cellular ranges
+author: Asaf Aprozper
+date: 2023/05/11
+tags:
+    - attack.initial_access
+    - attack.t1190
+logsource:
+    product: gcp
+    service: compute.googleapis.com
+detection:
+    selection_source:
+        data.resource.type: gce_firewall_rule
+        data.protoPayload.methodName: 
+            - v1.compute.firewalls.insert
+            - v1.compute.firewalls.update
+            - v1.compute.firewalls.patch
+    lookalike_private_ips:
+        - '172.0.0.0/8'
+        - '172.32.0.0/11'
+    condition: selection_source and lookalike_private_ips
+falsepositives:
+    - Firewall rule creation or modification made by a trusted or known entity in the system.
+level: high
