@@ -15,6 +15,7 @@ In the evolving landscape of cloud computing, safeguarding networks from unautho
 
 ## Repository Contents
 - [Proxy IP Unmasker/](https://github.com/3pun0x/Unmasking-The-Subnet/tree/main/Proxy-IP-Unmasker): Python script that scans IPv4 ranges and "unmasks" those only accessible from proxy IP addresses.
+- [SG Unmasker/](https://github.com/3pun0x/Unmasking-The-Subnet/blob/main/SG-Unmasker/README.MD): Python script that scans your AWS security groups under a sepcific regsion after misconfigured ingress rules with lookalike private IP ranges
 - [Rules/](https://github.com/3pun0x/Unmasking-The-Subnet/tree/main/rules): SIEM Hunting rules triggered by the creation/modification of security groups\FW Rules contains ingress lookalike internal IP ranges of AT&T and T-Mobile.
 - `Presentation/`: The slide deck from the talk.
 
