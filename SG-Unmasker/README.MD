@@ -1,10 +1,8 @@
 # SG Unmasker
 
-SG Unmasker is a Python tool that checks AWS Security Groups in a specific region for certain inbound IP ranges. 
-It can be particularly helpful in identifying potentially risky security group configurations that allow traffic from specific IP ranges.
+SG Unmasker is a Python tool that checks AWS Security Groups in a specific region that misconfigured with inbound lookalike private IP ranges.
 
 ## Features
-
 - Fetches all Security Groups in a specified AWS region
 - Checks inbound rules for certain IP ranges, excluding valid Private IPv4 Class B ranges
 - Printing when it identifies a Security Group that allows traffic from the specified IP ranges
@@ -16,6 +14,7 @@ It can be particularly helpful in identifying potentially risky security group c
 ## Installation
 1. Clone this repository
 2. Navigate to the cloned repository
+3. Run the script
 
 ## Usage
 Run the tool with Python:
