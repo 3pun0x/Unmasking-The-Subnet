@@ -15,7 +15,6 @@ https://github.com/3pun0x/Unmasking-The-Subnet
 
 
 ## Prerequisites
-This script is written in Python and uses several libraries that need to be installed. These libraries include socks, multiprocessing, tqdm, and netaddr. You can install these using requirements.txt:
 1. Python 3.6 or above
 2. SOCKS5 Proxy server with username and password
 
